@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { HeroProps } from "@/interfaces";
+import { HeroProps } from "../../../interfaces";
 
 const HomeHero: React.FC<HeroProps> = ({
   title,

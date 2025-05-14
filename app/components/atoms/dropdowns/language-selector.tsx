@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import {
@@ -5,10 +7,10 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "../../ui/dropdown-menu";
 import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { LANGUAGES_LIST } from "@/constants";
+import { LANGUAGES_LIST } from "../../../constants";
 
 export const LanguageSelector = () => {
   const { i18n } = useTranslation();
@@ -36,7 +38,8 @@ export const LanguageSelector = () => {
             <Globe className="h-5 w-5" />
           </Button>
           <div className="hidden xl:block">
-            {LANGUAGES_LIST.find((lang) => lang.code === selectedLanguage)?.name || "English"}
+            {LANGUAGES_LIST.find((lang) => lang.code === selectedLanguage)
+              ?.name || "English"}
           </div>
         </div>
       </DropdownMenuTrigger>

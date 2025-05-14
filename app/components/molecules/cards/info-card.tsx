@@ -1,6 +1,8 @@
+"use client";
+
 import { FC } from "react";
 import { Button } from "@/components/ui/button";
-import { MultiCardProps } from "@/interfaces";
+import { MultiCardProps } from "../../../interfaces";
 import { MoveRight } from "lucide-react";
 
 export const InfoCard: FC<MultiCardProps> = ({ data }) => {
@@ -40,7 +42,7 @@ export const InfoCard: FC<MultiCardProps> = ({ data }) => {
                 className="w-fit mt-2 text-[#ED3237] bg-white border-0 shadow-none hover:bg-white !p-0 font-semibold text-lg hover:cursor-pointer"
               >
                 {item.buttonText}
-                <MoveRight className="m-auto w-fit h-full"/>
+                <MoveRight className="m-auto w-fit h-full" />
               </Button>
             )}
           </div>

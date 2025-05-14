@@ -1,3 +1,5 @@
+"use client";
+
 import {
   FaFacebookF,
   FaTwitter,
@@ -10,9 +12,9 @@ import {
   FaRegClock,
 } from "react-icons/fa";
 import Logo from "@/assets/Images/lifevision-logo.svg";
-import { Link } from "react-router-dom";
+
 import { useTranslation } from "react-i18next";
-import GradientComponent from "@/components/molecules/footer/gradient-component";
+import GradientComponent from "../../molecules/footer/gradient-component";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -124,7 +126,7 @@ const Footer = () => {
         <div className="text-left">
           <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
         </div>
-        <div className="text-right flex space-x-2">
+        {/* <div className="text-right flex space-x-2">
           <Link to="/all-rights" className="hover:underline">
             {t("footer.legal.rights")}
           </Link>
@@ -136,7 +138,7 @@ const Footer = () => {
           <Link to="/privacy" className="hover:underline">
             {t("footer.legal.privacy")}
           </Link>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

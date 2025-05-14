@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable react-hooks/rules-of-hooks */
 import {
   Badge1,
@@ -37,7 +39,16 @@ import {
   UpdateCardImageTwo,
 } from "@/public/assets";
 import { useTranslation } from "react-i18next";
-import { ApproachItem, AwardHighlight, BlogPostItem, FeaturesData, InfoCardItem, SolutionCardItem, TeamMember, UpdateCardItem } from "../interfaces";
+import {
+  ApproachItem,
+  AwardHighlight,
+  BlogPostItem,
+  FeaturesData,
+  InfoCardItem,
+  SolutionCardItem,
+  TeamMember,
+  UpdateCardItem,
+} from "../interfaces";
 
 export const getRoutePaths = () => {
   const { t } = useTranslation();
