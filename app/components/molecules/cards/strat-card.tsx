@@ -1,6 +1,7 @@
 import React from "react";
 import { Target, Settings, Network, LayoutGrid } from "lucide-react";
-import { Feature, FeaturesProps } from "@/interfaces";
+import { Feature, FeaturesProps } from "@/app/interfaces";
+
 
 const FeatureIcon: React.FC<{ type: Feature["icon"] }> = ({ type }) => {
   const iconClass = "w-12 h-12 text-white";

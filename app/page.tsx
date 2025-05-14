@@ -1,8 +1,9 @@
-import { HomeHero } from "./components/organisms";
+
 import Features from "./components/molecules/cards/strat-card";
 import { InfoCard } from "./components/molecules/cards/info-card";
 import Testimonials from "./components/molecules/cards/testimonial-card";
 import { FEATURES_DATA, HOME_SERVICE_CARDS, TESTIMONIAL_CARDS } from "./constants";
+import HomeHero from "./components/organisms/common/home-hero";
 
 export default function Home() {
   return (
