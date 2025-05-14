@@ -1,6 +1,6 @@
-import { HeroBgLeft, HeroBgRight } from "@/assets";
-import { CommonHeroSectionProps } from "@/interfaces";
-import React from "react";
+// import { HeroBgLeft, HeroBgRight } from "@/assets";
+
+import { CommonHeroSectionProps } from "@/app/interfaces";
 
 const CommonHeroSection: React.FC<CommonHeroSectionProps> = ({
   title,
@@ -13,12 +13,12 @@ const CommonHeroSection: React.FC<CommonHeroSectionProps> = ({
   return (
     <div className="flex flex-col w-full min-h-[500px] max-h-[500px] justify-center text-center items-center gap-4">
       <img
-        src={HeroBgLeft}
+        src={""}
         alt="Hero Image"
         className="sm:w-1/4 w-1/2 absolute left-0 sm:-translate-y-10 -translate-y-30"
       />
       <img
-        src={HeroBgRight}
+        src={""}
         alt="Hero Image"
         className="sm:w-1/4 w-1/2 absolute right-0 sm:-translate-y-10 translate-y-25"
       />

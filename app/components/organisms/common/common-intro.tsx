@@ -1,6 +1,6 @@
+import { SectionProps } from "@/app/interfaces";
 import { Button } from "@/components/ui/button";
-import { SectionProps } from "@/interfaces";
-import React from "react";
+
 
 const CommonIntroSection: React.FC<SectionProps> = ({
   title,

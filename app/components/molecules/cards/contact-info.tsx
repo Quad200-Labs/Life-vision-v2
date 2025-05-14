@@ -1,6 +1,7 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { ContactItem, ContactProps } from "@/interfaces";
+import { ContactItem, ContactProps } from "@/app/interfaces";
+
 
 const ContactInfo: React.FC<ContactProps> = ({ data }) => {
   const {
