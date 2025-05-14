@@ -35,19 +35,9 @@ import {
   UpdateCardImageSix,
   UpdateCardImageThree,
   UpdateCardImageTwo,
-} from "@/assets";
-import {
-  InfoCardItem,
-  AwardHighlight,
-  TeamMember,
-  UpdateCardItem,
-  SolutionCardItem,
-  FeaturesData,
-  BlogPostItem,
-  ApproachItem,
-} from "@/interfaces";
-
+} from "@/public/assets";
 import { useTranslation } from "react-i18next";
+import { ApproachItem, AwardHighlight, BlogPostItem, FeaturesData, InfoCardItem, SolutionCardItem, TeamMember, UpdateCardItem } from "../interfaces";
 
 export const getRoutePaths = () => {
   const { t } = useTranslation();

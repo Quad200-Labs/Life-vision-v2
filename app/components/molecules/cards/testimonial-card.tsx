@@ -1,5 +1,6 @@
 import React from "react";
-import StarRating from "@/components/atoms/rating/rating-bar";
+import StarRating from "../../atoms/rating/rating-bar";
+
 
 interface Testimonial {
   name: string;
